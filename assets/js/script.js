@@ -60,4 +60,17 @@ const teamMembers = [
 const teamMember = document.querySelector('.member')
 console.log(teamMember);
 
+/*
+MILESTONE 1:
+Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+*/
+for (let i = 0; i < teamMembers.length; i++) {
+    const teamMember = teamMembers[i];
+    console.log(teamMember);
 
+    for (const key in teamMember) {
+            console.log(teamMember[key]);
+    }
+   
+    
+}
