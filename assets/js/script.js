@@ -57,8 +57,8 @@ const teamMembers = [
 ];
 //console.log(teamMembers);
 
-const teamMember = document.querySelector('.member')
-console.log(teamMember);
+const teamMemberDOM = document.querySelector('.member')
+console.log(teamMemberDOM);
 
 /*
 MILESTONE 1:
@@ -68,4 +68,24 @@ for (let i = 0; i < teamMembers.length; i++) {
     const teamMember = teamMembers[i];
     
     console.log(teamMember.name, teamMember.job, teamMember.photo);
-}
+
+    /*MILESTONE 2:
+        Stampare le stesse informazioni su DOM sottoforma di stringhe
+      BONUS 1:
+        Trasformare la stringa foto in una immagine effettiva
+      BONUS 2:
+        Organizzare i singoli membri in card/schede*/
+
+    const markup = `
+    <div class="col-12 col-md-4">
+        <div class="card text-center">
+            <img src="./assets/img/${teamMember.photo}" alt="profile photos of team Members">
+            <div class="cardBody">
+                <h3>${teamMember.name}</h3>
+                <p>${teamMember.job}</p>     
+            </div>
+        </div>
+    </div>`
+
+    teamMemberDOM.insertAdjacentHTML('beforeend', markup);
+};
