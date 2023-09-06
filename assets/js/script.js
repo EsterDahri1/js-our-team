@@ -51,5 +51,13 @@ const teamMembers = [
         photo: ""
     }
 ];
-console.log(teamMembers);
+//console.log(teamMembers);
+
+/*MILESTONE 1:
+Stampare su console:*/
+//le informazioni di nome, ruolo e la stringa della foto
+
+for (const key in teamMembers) {
+   console.log(teamMembers[key]);
+}
 
