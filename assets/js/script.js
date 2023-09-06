@@ -66,11 +66,6 @@ Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e 
 */
 for (let i = 0; i < teamMembers.length; i++) {
     const teamMember = teamMembers[i];
-    console.log(teamMember);
-
-    for (const key in teamMember) {
-            console.log(teamMember[key]);
-    }
-   
     
+    console.log(teamMember.name, teamMember.job, teamMember.photo);
 }
