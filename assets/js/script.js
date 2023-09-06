@@ -1,4 +1,4 @@
-console.log('ciao');
+//console.log('ciao');
 
 /*
 MILESTONE 0:
@@ -13,51 +13,51 @@ BONUS 2:
 Organizzare i singoli membri in card/schede
 */
 
-//MILESTONE 0: Creo array di oggetti forniti
+/*
+MILESTONE 0: 
+Creo array di oggetti forniti
+*/
+
 const teamMembers = [
     {
         name: "Wayne Barnett",
         job: "Founder & CEO",
-        photo: ""
+        photo: "wayne-barnett-founder-ceo.jpg"
     },
 
     {
         name: "Angela Caroll",
         job: "Chief Editor",
-        photo: ""
+        photo: "angela-caroll-chief-editor.jpg"
     },
 
     {
         name: "Walter Gordon",
         job: "Office Manager",
-        photo: ""
+        photo: "walter-gordon-office-manager.jpg"
     },
 
     {
         name: "Angela Lopez",
         job: "Social Media Manager",	
-        photo: ""
+        photo: "angela-lopez-social-media-manager.jpg"
     },
 
     {
         name: "Scott Estrada",	
         job: "Developer",	
-        photo: ""
+        photo: "scott-estrada-developer.jpg"
     },
 
     {
         name: "Barbara Ramos",	
         job: "Graphic Designer",	
-        photo: ""
+        photo: "barbara-ramos-graphic-designer.jpg"
     }
 ];
 //console.log(teamMembers);
 
-/*MILESTONE 1:
-Stampare su console:*/
-//le informazioni di nome, ruolo e la stringa della foto
+const teamMember = document.querySelector('.member')
+console.log(teamMember);
 
-for (const key in teamMembers) {
-   console.log(teamMembers[key]);
-}
 
