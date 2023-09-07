@@ -89,3 +89,29 @@ for (let i = 0; i < teamMembers.length; i++) {
 
     teamMemberDOM.insertAdjacentHTML('beforeend', markup);
 };
+
+
+/*Correzione bonus 3
+
+Aggiungete un form in pagina per permettere all’utente di aggiungere nuovi membri del team: cliccando sul pulsante “add” viene creato un nuovo oggetto, il quale viene inserito nell’array iniziale e viene stampata una nuova card con tutte le informazioni inserite dall’utente.
+
+    document.queryselector('form').addEventListener('submit', function(e){
+        e.preventDeafult();
+
+        //read the inputs
+        const memberName = document.getElementById('name').value
+        const memberJob = document.getElementById('job').value
+        const memberPhoto = document.getElementById('photo').value
+
+        console.log(memberName, memberJob, memberPhoto);
+
+        const newMember = {
+            name: '',
+            job: '', 
+            photo: ''
+        }
+
+        team.push(newMember);
+        console.log(team);
+    })
+*/
